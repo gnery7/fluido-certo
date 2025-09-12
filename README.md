@@ -32,7 +32,7 @@ Para testar ou continuar o desenvolvimento, siga estes passos:
 
 1.  **Clonar o repositório:**
     ```bash
-    git clone [https://github.com/SEU_USUARIO/fluido-certo.git](https://github.com/SEU_USUARIO/fluido-certo.git)
+    git clone [https://github.com/gnery7/fluido-certo.git]
     ```
 
 2.  **Navegar para a pasta do projeto:**
