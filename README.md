@@ -2,20 +2,40 @@
 
 Um sistema desenvolvido para ajudar a encontrar a recomendação de fluido de motor ideal para qualquer veículo. A aplicação conta com uma interface pública para consultas rápidas e um painel de controle administrativo para gerenciamento completo dos dados.
 
-Este projeto foi construído passo a passo, servindo como um estudo prático e aprofundado do ecossistema Laravel, desde a configuração do ambiente até a criação de uma interface de usuário moderna e funcional em dispositivos portateis (android, ios, steamdeck e etc..).
+Este projeto foi construído passo a passo, servindo como um estudo prático e aprofundado do ecossistema Laravel, desde a configuração do ambiente até a criação de uma interface de usuário moderna e funcional em dispositivos portáteis.
+
+---
+
+## Demonstração em Vídeo
+
+#### Consulta Pública e Seleção Dinâmica
+O fluxo principal para um visitante: selecionar dinamicamente a montadora, modelo e ano para encontrar a recomendação de fluido.
+
+![Demonstração da Consulta Pública](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzkwbXgwdWZpeTRvMW42dHNpdjAzNmRxbm83M3JyeTN0azB0ajFsOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HpV1l9p5cyNp8CT7jp/giphy.gif)
+
+<br>
+
+#### Autenticação e Acesso ao Painel
+Fluxo de login/registo de um usuário administrativo para aceder à área de gestão segura, construído com Laravel Breeze.
+
+![Demonstração do Login](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnpva2hrY2k3N2tuMHphcjFweDMwYXdrbjZhdDNtOWg4ZDhucGdleCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bieYEj5NLriPHYTFGi/giphy.gif)
+
+<br>
+
+#### Gestão de Dados (CRUD) no Painel de Controle
+Demonstração das funcionalidades de Criar, Ler, Editar e Excluir para montadoras, modelos e recomendações, utilizando uma interface de cards responsiva com ações via modal.
+
+![Demonstração do Painel de Controle](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm12aHVzbDlyOWxrejVtOGJnbjhycGtmcXozOG15ZndldGY1Z3FkYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ILdY6TsVtOrTDF3Hs8/giphy.gif)
 
 ---
 
 ## Principais Funcionalidades
 
-* **Consulta Pública Dinâmica:** Uma interface simples onde o usuário seleciona Montadora, Modelo e Ano em menus suspensos que se atualizam dinamicamente para revelar a recomendação de fluido correta.
+* **Consulta Pública Dinâmica:** Uma interface simples onde o usuário seleciona Montadora, Modelo e Ano em menus suspensos que se atualizam dinamicamente.
 
-* **Painel Administrativo Seguro:** Uma área de gestão protegida por autenticação (criada com Laravel Breeze), onde um administrador pode realizar operações CRUD (Criar, Ler, Editar, Excluir) para:
-    * Montadoras
-    * Modelos de Veículos (com relacionamento à sua Montadora)
-    * Recomendações de Fluido (com relacionamento ao seu Modelo e Ano)
+* **Painel Administrativo Seguro:** Uma área de gestão protegida por autenticação (criada com Laravel Breeze), onde um administrador pode realizar operações CRUD completas.
 
-* **Interface Responsiva:** O design foi construído com Bootstrap 5, utilizando um layout de cards que se adapta perfeitamente a qualquer tamanho de ecrã, de desktops a telemóveis. As ações nos cards são acionadas via Modals para uma experiência de usuário mais limpa em mobile.
+* **Interface Responsiva:** O design foi construído com Bootstrap 5, utilizando um layout de cards que se adapta perfeitamente a qualquer tamanho de ecrã e aciona as ações via Modals para uma melhor experiência mobile.
 
 ## 🛠️ Stack de Tecnologia
 
@@ -32,7 +52,7 @@ Para testar ou continuar o desenvolvimento, siga estes passos:
 
 1.  **Clonar o repositório:**
     ```bash
-    git clone [https://github.com/gnery7/fluido-certo.git]
+    git clone [https://github.com/gnery7/fluido-certo.git](https://github.com/gnery7/fluido-certo.git)
     ```
 
 2.  **Navegar para a pasta do projeto:**
@@ -69,6 +89,6 @@ Para testar ou continuar o desenvolvimento, siga estes passos:
     npm run dev
     ```
 
-9.  **Acessar a aplicação:**
-    * Se estiver a usar Laragon, ele criará automaticamente uma URL. Basta acessar: `http://fluido-certo.test`
-    * Alternativamente, num outro terminal, rode `php artisan serve` e acesse `http://127.0.0.1:8000`.
+9.  **Aceder à aplicação:**
+    * Se estiver a usar Laragon, ele criará automaticamente uma URL. Basta aceder: `http://fluido-certo.test`
+    * Alternativamente, num outro terminal, rode `php artisan serve` e aceda a `http://127.0.0.1:8000`.
