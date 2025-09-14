@@ -37,6 +37,32 @@ Demonstração das funcionalidades de Criar, Ler, Editar e Excluir para montador
 
 * **Interface Responsiva:** O design foi construído com Bootstrap 5, utilizando um layout de cards que se adapta perfeitamente a qualquer tamanho de ecrã e aciona as ações via Modals para uma melhor experiência mobile.
 
+### 🔌 Documentação e Demonstração da API
+
+A aplicação expõe um endpoint público (`GET`) para consultar as recomendações de fluido. O GIF abaixo demonstra uma requisição de sucesso e uma de erro usando o Postman.
+
+![Demonstração da API com Postman](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXp0eWduYXhtN2s1eTQxZHhoZnA1Y2pqNzFpenJ0Y3owbjhhZmlxZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/68gKU9KqKi2RxB7fv5/giphy.gif)
+
+**Endpoint:**
+`GET /api/v1/recommendation`
+
+**Parâmetros (Query):**
+
+| Parâmetro    | Tipo    | Obrigatório | Exemplo                 |
+| :----------- | :------ | :---------- | :---------------------- |
+| `manufacturer` | string  | Sim         | `Montadora Genérica 1`  |
+| `model`        | string  | Sim         | `Modelo A`              |
+| `year`         | integer | Sim         | `2022`                  |
+
+**Exemplo de Resposta de Sucesso (Status `200 OK`):**
+```json
+{
+    "data": {
+        "recommended_oil": "Óleo Tipo A"
+    }
+}
+```
+
 ## 🛠️ Stack de Tecnologia
 
 * **Back-end:** Laravel 11 & PHP 8.3
